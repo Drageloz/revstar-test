@@ -16,13 +16,13 @@ export class Inventary extends BaseEntity {
   description: string;
 
   @Column()
-  stock: string;
+  stock: number;
 
   @Column()
   name: string;
 
   @Column()
-  price: string;
+  price: number;
 
   @ManyToOne(() => Company, (company) => company.inventary, {
     nullable: true,

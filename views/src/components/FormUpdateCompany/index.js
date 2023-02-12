@@ -24,7 +24,7 @@ export const FormUpdateCompany = ({ company, hiddenModal, action }) => {
         <styles.FormUserContainer>
           <div>
             <label>NIT</label>
-            <styles.Input {...register('nit', { required: true })} />
+            <styles.Input {...register('nit', { required: true })}/>
             {errors.nit && <styles.SpanError>Este campo es requerido</styles.SpanError>}
           </div>
           <div>
@@ -39,7 +39,7 @@ export const FormUpdateCompany = ({ company, hiddenModal, action }) => {
           </div>
           <div>
             <label>Teléfono</label>
-            <styles.Input {...register('phone', { required: true })} />
+            <styles.Input {...register('phone', { required: true })} type='number'/>
             {errors.phone && <styles.SpanError>Este campo es requerido</styles.SpanError>}
           </div>
         </styles.FormUserContainer>

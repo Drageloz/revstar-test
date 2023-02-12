@@ -1,2 +1,2 @@
-# revstar-test
+# REVSTAR INVENTORY
 Inventary Control

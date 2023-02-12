@@ -20,7 +20,7 @@ export class Company extends BaseEntity {
   name: string;
 
   @Column()
-  phone: string;
+  phone: number;
 
   @OneToMany(() => Inventary, (inventary) => inventary.company, {
     nullable: true,
