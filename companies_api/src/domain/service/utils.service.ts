@@ -24,7 +24,7 @@ export class UtilsService implements UtilsInterface {
     const args = {
       fromName: 'Drageloz',
       fromEmail: 'siriland.dev@gmail.com',
-      toEmail: 'siriland.dev@gmail.com',
+      toEmail: 'drageloz.test@gmail.com',
       subject: 'test',
       text: 'This is your inventary',
       fileName: file.fieldname + '.pdf',
