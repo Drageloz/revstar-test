@@ -17,6 +17,7 @@ const Images_Navbar = [
 ]
 
 export const Layout = ({ screen }) => {
+  const [cookies, setCookies, removeCookies] = useCookies([''])
   const [isLoading, setIsLoading] = useState(true)
   const [showPanel, setShowPanel] = useState(false)
   const navigate = useNavigate()
@@ -33,7 +34,7 @@ export const Layout = ({ screen }) => {
 
   const handleLogout = (e) => {
     console.log('Logout')
-    removeCookie('jwt', { path: '/' })
+    removeCookies('jwt', { path: '/' })
     navigate('/')
   }
 
