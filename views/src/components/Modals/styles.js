@@ -28,13 +28,13 @@ export const ContainerFilters = styled.div`
 export const Container = styled.div`
   position: fixed;
   top: calc(50% - 140px);
-  left: calc(50% - 250px/2);
+  left: calc(50% - 350px/2);
   z-index: 5;
   background: white;
   border: 2px solid #F36F23;
   border-radius: 40px;
   text-align: center;
-  width: 250px;
+  width: 350px;
 
 
   & h1{
@@ -76,6 +76,8 @@ export const Container = styled.div`
   }
 
   @media only screen and (min-width: 769px) {
+    left: calc(50% - 500px/2);
+    width: 500px;
   
     & h1{
       font: normal normal bold 30px/40px ${config.secondaryLetter};
