@@ -12,12 +12,12 @@ import { LocalStrategy } from './domain/strategy/local.strategy';
 @Module({
   imports: [
     PassportModule,
+    ConfigModule.forRoot({
+      envFilePath: ['.env.local'],
+    }),
     JwtModule.register({
       secret: process.env.SECRET_KEY,
       signOptions: { expiresIn: '3600s' },
-    }),
-    ConfigModule.forRoot({
-      envFilePath: ['.env.local'],
     }),
   ],
   controllers: [AppController, AuthController],
