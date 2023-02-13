@@ -1,8 +1,6 @@
 # Revstar Test
 ## REVSTAR INVENTORY APP
-
-
-# REVSTAR INVENTORY
+[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
 EL Repositorio cuenta con 3 secciones principales,
 
 - views
@@ -36,4 +34,4 @@ Para poder revisar la documentación de las apis, estas cuentan con Swagger el c
 Api auth -> http://localhost:3000/docs
 Companie auth -> http://localhost:3001/docs
 
-NOTA: La revisión de la documentación de swagger no está condigurada en despliegue.
+La revisión de la documentación de swagger no está condigurada en despliegue.
