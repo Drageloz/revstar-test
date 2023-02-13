@@ -121,7 +121,7 @@ export const TableCompany = () => {
 
   return (
     <>
-      {true && <LoadingWithText />}
+      {isLoading && <LoadingWithText />}
       {showModalDelete === 'company' &&
         <AcceptTerms body={body}>
           <button onClick={e => onDeleteCompanyFetch(e, 'company')}>ACEPTAR</button>
